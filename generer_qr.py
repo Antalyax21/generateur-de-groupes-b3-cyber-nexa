@@ -13,7 +13,7 @@ qr.add_data(url)
 qr.make(fit=True)
 
 image = qr.make_image(
-    fill_color="black",
+    fill_color="purple",
     back_color="white"
 )
 
