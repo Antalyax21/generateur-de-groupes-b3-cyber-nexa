@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Générateur de groupes B3 Cyber : Nexa </title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Générateur de groupes B3 Cyber : Nexa </h1>
+    <p>Création aléatoire des groupes de la classe</p>
+</header>
+
+<main>
+<!-- es ce que tous le monde est la -->
+
+
+    <section id="etape-presences">
+
+        <div class="entete-etape">
+            <span class="numero-etape">Étape 1 / 2</span>
+
+            <h2>Qui est présent aujourd'hui ?</h2>
+
+            <p>
+                Décochez les personnes absentes.
+            </p>
+        </div>
+
+
+        <div class="compteur">
+            <strong id="nombre-presents">0</strong>
+            participants sélectionnés
+        </div>
+
+
+        <div class="actions-participants">
+
+            <button
+                type="button"
+                id="tout-selectionner"
+                class="bouton-secondaire"
+            >
+                Tout sélectionner
+            </button>
+
+            <button
+                type="button"
+                id="tout-deselectionner"
+                class="bouton-secondaire"
+            >
+                Tout désélectionner
+            </button>
+
+        </div>
+
+
+        <!--js ajoute les eleves automatiquement-->
+
+        <div id="liste-eleves"></div>
+
+
+        <div class="ajout-participant">
+
+            <h3>Ajouter un participant</h3>
+
+            <p>
+                Pour ajouter exceptionnellement une personne au tirage.
+            </p>
+
+            <div class="ajout-ligne">
+
+                <input
+                    type="text"
+                    id="nouveau-participant"
+                    placeholder="Prénom / Nom"
+                    autocomplete="off"
+                >
+
+                <button
+                    type="button"
+                    id="ajouter-participant"
+                    class="bouton-secondaire"
+                >
+                    Ajouter
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="navigation">
+
+            <button
+                type="button"
+                id="bouton-suivant"
+                class="bouton-principal"
+            >
+                Suivant →
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+<!-- groupes -->
+
+    <section id="etape-groupes" hidden>
+
+        <button
+            type="button"
+            id="bouton-retour"
+            class="bouton-retour"
+        >
+            ← Modifier les présences
+        </button>
+
+
+        <div class="entete-etape">
+
+            <span class="numero-etape">Étape 2 / 2</span>
+
+            <h2>Création des groupes</h2>
+
+            <p>
+                Choisissez la taille souhaitée puis lancez le tirage.
+            </p>
+
+        </div>
+
+
+        <div class="compteur">
+            <strong id="nombre-presents-etape2">0</strong>
+            participants présents
+        </div>
+
+
+        <div class="configuration">
+
+            <h3>Nombre de personnes par groupe</h3>
+
+            <div class="selecteur-taille">
+
+                <button
+                    type="button"
+                    id="diminuer-taille"
+                >
+                    −
+                </button>
+
+                <span id="taille-groupe">
+                    3
+                </span>
+
+                <button
+                    type="button"
+                    id="augmenter-taille"
+                >
+                    +
+                </button>
+
+            </div>
+
+
+            <button
+                type="button"
+                id="generer-groupes"
+                class="bouton-principal"
+            >
+                🎲 Générer les groupes
+            </button>
+
+        </div>
+
+
+        <!-- resultats -->
+
+        <div id="zone-resultats" hidden>
+
+            <div class="titre-resultats">
+
+                <h2>Groupes générés</h2>
+
+                <p>
+                    Le tirage a été effectué aléatoirement.
+                </p>
+
+            </div>
+
+
+            <div id="liste-groupes"></div>
+
+
+            <div class="actions-resultats">
+
+                <button
+                    type="button"
+                    id="refaire-tirage"
+                    class="bouton-secondaire"
+                >
+                    🔄 Nouveau tirage
+                </button>
+
+                <button
+                    type="button"
+                    id="copier-groupes"
+                    class="bouton-secondaire"
+                >
+                    📋 Copier les groupes
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+    <p>Générateur de groupes</p>
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
