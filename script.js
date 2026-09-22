@@ -2,9 +2,9 @@
 
 const eleves = [
     "Lylia.FS",
-    "Mickaela.G",
+    "Mickaëla.G",
     "Hicham.M",
-    "Benoit.F",
+    "Benoît.F",
     "Emie.G",
     "Ansaier.A",
     "Jovanie.T",
@@ -24,14 +24,14 @@ const eleves = [
     "Antoine.J",
     "Thibault.D",
     "Susan.M",
-    "Atse.A",
+    "Eric.M",
     "Orphé.C",
     "Logan.D",
     "Guihlem.B",
     "Tristant.V",
     "Nicolas.G",
     "Ethan.C",
-    "Abdelilah.El.H",
+    "Abdelilah.El-H",
     "Helvy.H"
 ];
 
